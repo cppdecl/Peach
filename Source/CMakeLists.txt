@@ -10,6 +10,10 @@ add_executable(${PROJECT_NAME}
     ${CC_FILES}
 )
 
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    OUTPUT_NAME ${PEACH_OUTPUT_NAME}
+)
+
 target_link_libraries(${PROJECT_NAME} PUBLIC
     ${CMAKE_THREAD_LIBS_INIT}
 )
